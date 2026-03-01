@@ -122,3 +122,21 @@
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
   cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
