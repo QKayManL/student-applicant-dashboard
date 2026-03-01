@@ -1,17 +1,19 @@
 import { Routes, Route } from "react-router-dom";
-import MainLayout from "./Layouts/MainLayout";
-import LandingPage from "./Pages/LandingPage";
-import ApplicantDashboard from "./Pages/ApplicantDashboard";
-import AdminDashboard from "./Pages/AdminDashboard";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import AdminDashboard from "./pages/AdminDashboard";
+import StudentDashboard from "./pages/StudentDashboard";
+import AdminStudentView from "./pages/AdminStudentView";
+
 
 function App() {
   return (
     <Routes>
-      <Route element={<MainLayout />}>
-        <Route index element={<LandingPage />} />
-        <Route path="dashboard" element={<ApplicantDashboard />} />
-        <Route path="admin" element={<AdminDashboard />} />
-      </Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/admin" element={<AdminDashboard />} />
+      <Route path="/student" element={<StudentDashboard />} />
+      <Route path="/admin/student/:id" element={<AdminStudentView />} />
     </Routes>
   );
 }

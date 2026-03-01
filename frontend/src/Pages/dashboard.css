@@ -1,0 +1,124 @@
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #111827;
+  color: white;
+  padding: 30px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.sidebar a:hover {
+  color: #6366f1;
+}
+
+.main {
+  padding: 40px;
+}
+
+.main h1 {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card p {
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 28px;
+}
+
+.student-sidebar {
+  background: #0f172a;
+}
+
+.profile-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 400px;
+}
+.sub {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 4px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #6366f1;
+}
+
+.section {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.reminders {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.reminder-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.student-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.student-link .card {
+  transition: 0.2s ease;
+}
+
+.student-link .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  cursor: pointer;
+}
