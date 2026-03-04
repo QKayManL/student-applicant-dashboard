@@ -1,9 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import Login from "./pages/Login.jsx";
-import AdminDashboard from "./pages/AdminDashboard.jsx";
-import StudentDashboard from "./pages/StudentDashboard.jsx";
-import AdminStudentView from "./pages/AdminStudentView.jsx";
+
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import AdminDashboard from "./pages/AdminDashboard";
+import StudentDashboard from "./pages/StudentDashboard";
+import AdminStudentView from "./pages/AdminStudentView";
 
 
 function App() {
